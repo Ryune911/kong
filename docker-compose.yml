@@ -68,7 +68,7 @@ services:
       - 8080
     ports:
       - 8080:8080
-    command: 'start --kong-url http://kong:8001 --basic-auth avatar=avatar911'
+    command: 'start --kong-url http://kong:8001 --basic-auth user=pwd'
     depends_on:
       - kong
     restart: always
